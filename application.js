@@ -14,7 +14,7 @@ function appendDom(employee){
 //calls the combile salareies method and updates this information to the DOM
 function calculateNewSalary(){ //
 	var totalSalary = compileSalaries(employeeLog);
-	$("#salaryMessage").text("The monthly cost of employee salaries is: " + totalSalary + " dollars");
+	$("#salaryMessage").text("The monthly cost of employee salaries is: $" + totalSalary);
 	
 }
 
