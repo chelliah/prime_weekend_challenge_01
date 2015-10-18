@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="application.js"></script>
+</head>
+<body>
+	<div id='container'>
+		<header>Salary Calculator</header>
+
+		<form id='employeeInfo'>
+			<div id='formBlock'>
+				<label for='firstName'>First Name: </label>
+				<input type='text' id='firstName' name='firstName' placeholder="First Name">
+			</div>
+			<div id='formBlock'>
+				<label for='lastName'>Last Name: </label>
+				<input type='text' id='lastName' name='lastName' placeholder = "Last Name">
+			</div>
+			<div id='formBlock'>
+				<label for='idNo'>ID Number: </label>
+				<input type='text' id='idNo' name='idNo' placeholder="ID Number">
+			</div>
+			<div id='formBlock'>
+				<label for='jobTitle'>Job Title: </label>
+				<input type='text' id='jobTitle' name='jobTitle' placeholder="Job Title">
+			</div>
+			<div id='formBlock'>
+				<label for='yearlySalary'>Yearly Salary: </label>
+				<input type='text' id='yearlySalary' name='yearlySalary' placeholder="Yearly Salary">
+			</div>
+			<div id='formBlock'>
+				<input type='submit' value='Submit Employee'/>
+			</div>
+		</form>
+		<div id='employees'>
+			<h2>Employee Log: </h2>
+		</div>
+		<div id='calculator'>
+			<h2>Total Salary Calculator</h2>
+			<button id='calculateSalary'>Calculate Salary</button>
+			<p id='salaryMessage'>The total monthly cost of employee salaries is: </p>
+		</div>
+	</div>	
+</body>
+</html>
