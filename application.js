@@ -25,7 +25,7 @@ function compileSalaries(log){
 		var salary = parseInt(removeNonNumberic(log[employee].yearlySalary));
 		totalSalaries += salary;
 	}
-	return Math.round(totalSalaries/12);
+	return (totalSalaries/12).toFixed(2); //rounds value to 2 decimal places. 
 };
 
 //removes non numeric values from an input string
@@ -44,10 +44,14 @@ function deleteEmployee() {
 			employeeLog.splice(employee,1); //removes that employee from the array
 		}
 	}
+	if (deletedEmployee == undefined){
+		alert("No employee has that ID Number!");
+		return;
+	}
 	var id = deletedEmployee.idNo;
 	var employee = '#employee' + id;
 	$(employee).remove();
-	console.log(employeeLog);
+	console.log("Here is the new employee log", employeeLog);
 }
 
 $(document).ready(function(){//can put entireity of code in a function
@@ -63,7 +67,8 @@ $(document).ready(function(){//can put entireity of code in a function
 		appendDom(values);
 		employeeLog.push(values);
 		calculateNewSalary();
-		console.log(values);
+		console.log("Here is the new entry", values);
+		console.log("Here is the new employee log", employeeLog);
 	});
 
 	$('#delete').on('click',function(){

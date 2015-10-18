@@ -37,6 +37,8 @@ h2 {
 	font-family: helvetica, sans-serif;
 	font-size: 24px;
 	color:#1A3366;
+	text-decoration: underline;
+	margin-bottom: 5px;
 }
 
 p {
@@ -45,38 +47,65 @@ p {
 	color:#1A3366;
 }
 
+.employee {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	border: 1px solid;
+	border-radius: 5px;
+	color: #1A3366;
+	margin-top: 5px;
+	background-color: #DDD;
+};
+
 #container {
 	display: block;
 
 }
 #employeeInfo {
+	background: #DDD;
 	padding: 5px;
 	border: 1px solid;
+	border-radius: 5px;
 	font-family: helvetica, sans-serif;
 	font-size: 16px;
 	color: #1A3366;
 	width: 25%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    line-height: 150%
+}
+
+.formBlock#submitButton {
+	text-align: center;
 }
 
 #employees{
+	margin-top: 5px;
+	margin-left: 2%;
+	border: 1px solid;
+	border-radius: 5px;
 	padding:5px;
 	width: 45%;
 	float: left;
 }
+
 #calculator {
+	margin-top: 5px;
+	margin-right: 2%;
+	border: 1px solid;
+	border-radius: 5px;
 	padding: 5px;
 	width: 45%;
 	float:right;
 }
 
+#employeeTitle{
+	display: inline-block;
+/*	float:left;*/
+}
+#delete {
+	display:inline-block;
+/*	float:right;*/
+	margin: 5px;
+}
 
-.employee {
-	font-family: helvetica, sans-serif;
-	font-size: 16px;
-	border: 1px solid;
-	color: #1A3366;
-	margin-top: 5px;
-
-};
