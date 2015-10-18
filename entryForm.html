@@ -11,33 +11,36 @@
 		<header>Salary Calculator</header>
 
 		<form id='employeeInfo'>
-			<div id='formBlock'>
+			<div class='formBlock'>
 				<label for='firstName'>First Name: </label>
-				<input type='text' id='firstName' name='firstName' placeholder="First Name">
+				<input type='text' id='firstName' name='firstName' placeholder="First Name" required>
 			</div>
-			<div id='formBlock'>
+			<div class='formBlock'>
 				<label for='lastName'>Last Name: </label>
-				<input type='text' id='lastName' name='lastName' placeholder = "Last Name">
+				<input type='text' id='lastName' name='lastName' placeholder = "Last Name" required>
 			</div>
-			<div id='formBlock'>
+			<div class='formBlock'>
 				<label for='idNo'>ID Number: </label>
-				<input type='text' id='idNo' name='idNo' placeholder="ID Number">
+				<input type='text' id='idNo' name='idNo' placeholder="ID Number" required>
 			</div>
-			<div id='formBlock'>
+			<div class='formBlock'>
 				<label for='jobTitle'>Job Title: </label>
-				<input type='text' id='jobTitle' name='jobTitle' placeholder="Job Title">
+				<input type='text' id='jobTitle' name='jobTitle' placeholder="Job Title" required>
 			</div>
-			<div id='formBlock'>
+			<div class='formBlock'>
 				<label for='yearlySalary'>Yearly Salary: </label>
-				<input type='text' id='yearlySalary' name='yearlySalary' placeholder="Yearly Salary">
+				<input type='text' id='yearlySalary' name='yearlySalary' placeholder="Yearly Salary" required>
 			</div>
-			<div id='formBlock'>
+			<div class='formBlock'>
 				<input type='submit' value='Submit Employee'/>
 			</div>
 		</form>
+
 		<div id='employees'>
 			<h2>Employee Log: </h2>
+			<button id='delete'>Delete Employee</button>
 		</div>
+
 		<div id='calculator'>
 			<h2>Total Salary Calculator</h2>
 			<button id='calculateSalary'>Calculate Salary</button>
